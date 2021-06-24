@@ -19,11 +19,14 @@ mostrando as duas formas:
 Configuração via código (pacote usethis): https://youtu.be/2gmofUthjKk
 
 install.packages("usethis")  # instalação do pacote usethis
+
+# Informar para o Git seu nome, e email.
 usethis::use_git_config(# Seu nome
         user.name = "nome de usuário", 
         # Seu email
         user.email = "email da conta do github")
 
+# Abrir o r
 usethis::edit_r_environ()
 
 usethis::create_github_token()
