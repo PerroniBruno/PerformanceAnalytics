@@ -18,11 +18,11 @@ mostrando as duas formas:
 
 Configuração via código (pacote usethis): https://youtu.be/2gmofUthjKk
 
-install.packages("usethis")
+install.packages("usethis")  # instalação do pacote usethis
 usethis::use_git_config(# Seu nome
-        user.name = "marcosperroni", 
+        user.name = "nome de usuário", 
         # Seu email
-        user.email = "doutorado.perroni@gmail.com")
+        user.email = "email da conta do github")
 
 usethis::edit_r_environ()
 
