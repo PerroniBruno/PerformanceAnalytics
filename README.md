@@ -19,27 +19,23 @@ mostrando as duas formas:
 Configuração via código (pacote usethis): https://youtu.be/2gmofUthjKk
 
 install.packages("usethis")  # instalação do pacote usethis
-
- Informar para o Git seu nome, e email.
+ 
 usethis::use_git_config(# Seu nome
         user.name = "nome de usuário", 
         # Seu email
-        user.email = "email da conta do github")
+        user.email = "email da conta do github") # Informar para o Git seu nome, e email.
 
-Abrir o ambiente R
-usethis::edit_r_environ()
+usethis::edit_r_environ() # Abrir o arquivo ambiente R
 
-gerar token e digitar no ambiente R: GITHUB_PAT=ghp_MIjmPdvQB ... "
-usethis::create_github_token()
+usethis::create_github_token() # gerar token e digitar no arquivo ambiente R: GITHUB_PAT=ghp_MIjmPdvQB ... " (RLadies São Paulo)
 
- comando para usar o git
-usethis::use_git()
-
- comando para usar o github
-usethis::use_github()
+usethis::use_git()  # comando para usar o git
 
 
-Configuração manual: https://youtu.be/seWbPrPoKag
+usethis::use_github() # comando para usar o github
+
+
+## Configuração manual: https://youtu.be/seWbPrPoKag
 
 observação: na configuração manual tive que dar o seguitne comando no terminal do Rstudio: git push origin master 
 (na interface gráfica não estava conseguindo dar um push até digitar esse comando).
