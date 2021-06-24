@@ -36,7 +36,7 @@ usethis::use_github() # comando para usar o github
 ## Configuração manual: https://youtu.be/seWbPrPoKag
 
 A configuração manual é intuitiva: cria-se um novo projeto com controle de versão do git e partir daí é so digitar o 
-caminho do github (por exemplo:https://github.com/marcosperroni/PerformanceAnalytics) e confirmar.
+caminho do github (por exemplo:https://github.com/marcosperroni/PerformanceAnalytics) e confirmar. (não esqueça de forcar p projeto antes).
 
 
 
