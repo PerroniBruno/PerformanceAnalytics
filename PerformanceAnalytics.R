@@ -12,14 +12,28 @@
   # my local path: C:/UNC/PROJETOS DE PESQUISAS/PerformanceAnalytics
   # please change the path
 
-  assess <- read_excel("IAC_Database_20210429.xls", sheet = "ASSESS")
-  recc1 <- read_excel("IAC_Database_20210429.xls", sheet = "RECC1")
-  recc2 <- read_excel("IAC_Database_20210429.xls", sheet = "RECC2")
-  recc3 <- read_excel("IAC_Database_20210429.xls", sheet = "RECC3")
-  recc4 <- read_excel("IAC_Database_20210429.xls", sheet = "RECC4")
-  recc5 <- read_excel("IAC_Database_20210429.xls", sheet = "RECC5")
+# via API google drive
 
-  #Joining the recommendations
+#install.packages("googledrive")
+# library(googledrive)
+#temp <- tempfile(fileext = ".xls")
+#dl <- drive_download(as_id("1FUWGbGRCgWXV5bptQvy-Paj54hs9MHww"), path = temp, overwrite = TRUE)
+#assess <- read_excel(temp, sheet = "ASSESS")
+#recc1 <- read_excel(temp, sheet = "RECC1")
+#recc2 <- read_excel(temp, sheet = "RECC2")
+#recc3 <- read_excel(temp, sheet = "RECC3")
+#recc4 <- read_excel(temp, sheet = "RECC4")
+#recc5 <- read_excel(temp, sheet = "RECC5")
+
+  # via local folder
+  #assess <- read_excel("IAC_Database_20210429.xls", sheet = "ASSESS")
+  #recc1 <- read_excel("IAC_Database_20210429.xls", sheet = "RECC1")
+  #recc2 <- read_excel("IAC_Database_20210429.xls", sheet = "RECC2")
+  #recc3 <- read_excel("IAC_Database_20210429.xls", sheet = "RECC3")
+  #recc4 <- read_excel("IAC_Database_20210429.xls", sheet = "RECC4")
+  #recc5 <- read_excel("IAC_Database_20210429.xls", sheet = "RECC5")
+  
+    #Joining the recommendations
   recc <- rbind(recc1, recc2, recc3,recc4,recc5)
   dim(recc)
 
